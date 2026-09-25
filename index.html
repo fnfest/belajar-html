@@ -131,5 +131,107 @@
       <q>Desain bukan hanya tentang bagaimana sesuatu terlihat</q>
       dalam sebuah wawancara
     </p>
+    <!-- pre - semua whitespace, spasi, dan baris baru didalam pre, ditampilkan persis seperti yang ditulis di kode -->
+    <pre>
+    Nama    : Alexander
+    Email   : alex@gmail.com
+    Kota    : Surabaya
+    </pre>
+
+    <pre><code>function hitung(a, b){
+        return a + B;
+    }
+     console.log(hitung(3, 5));//8   
+    </code></pre>
+
+    <!-- kode menandakan teks sebagai kode komputer — nama variabel, fungsi, perintah terminal, atau sintaks -->
+    <p>
+      Gunakan property <code>display: flex</code> untuk mengaktifkan Flexbox
+      pada container
+    </p>
+    <!-- Perbedaan code, kdb, samp : -->
+    <!-- code = untuk kode yang ditulis programer. -->
+    <!-- kdb = untuk input dari keyboard yang harus ditekan pengguna.  -->
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+    <!-- samp = untuk output yang dihasilkan program -->
+    <p>Message from my computer:</p>
+    <p>
+      <samp>File not found.<br />Press F1 to continue</samp>
+    </p>
+    <!-- hr - menampilkan garis horizontal, biasanya menandai pergantian topik atau transisi tematik -->
+    <h2>Bab 1: HTML Dasar</h2>
+    <p>HTML adalah fondasi dari semua halaman web..</p>
+
+    <hr />
+
+    <h2>Bab 2 : CSS dan Styling</h2>
+    <p>setelah HTML siap, CSS mengontrol tampilannya...</p>
+
+    <!-- sup - menampilkan teks sedikit di atas garis teks normal dengan ukuran lebih kecil. -->
+    <p>Volume Kubus = s<sup>3</sup></p>
+    <p>Metode ini pertama kali dikembangkan pada tahun 1998.<sup>1</sup></p>
+    <p>Harga: Rp 299.999<sup>*</sup></p>
+    <!-- sub - menampilkan teks sedikit di bawah garis teks normal dengan ukuran lebih kecil. -->
+    <p>Air: H<sub>2</sub>o</p>
+    <p>log<sub>2</sub>8</p>
+    <p>Model yang digunakan: GPT <sub>4o</sub></p>
+
+    <!-- mark - menandai teks yang releven atau perlu diperhatikan dalam konteks tertentu dengan bawaan stabilo kuning -->
+    <p>Kamu mencari : "Belajar HTML". Ditemukan di artikel berikut:</p>
+    <p>
+      Panduan lengkap <mark>belajar HTML</mark> untuk pemula dari tag dasar
+      hingga semantic <mark>HTML</mark>modern
+    </p>
+
+    <!-- small- Teks dengan ukuran kecil dari ukuran sekitarnya. -->
+    <p>
+      Harga mulai dari Rp 99.000/Bulan
+      <small>*Belum termasuk PPN</small>
+    </p>
+
+    <!-- a adalah cara html membuat link. tinggal tulis URL di atribut href dan selesai. -->
+    <!-- Link Eksternal, menuju URL di domain lain -->
+    <a href="https://buildwithangga.com">Kunjungi BuildwithAngga</a>
+    <br />
+    <!-- Link Internal, menuju halaman lain di website yang sama -->
+    <!-- dari index.hmtl ke tentang.html di folder yang sama -->
+    <a href="tentang.html">Tentang Kami</a>
+    <br />
+    <!-- ke halaman di subfolder -->
+    <a href="blog/artikel-pertama.html">Baca artikel</a>
+    <br />
+    <!-- ke halaman di folder parent -->
+    <a href="../belajar-html/tentang.html">Kembali ke Tentang</a>
+    <br />
+    <!-- Anchor link - menuju bagian tertentu di halaman yang sama. caranya: beri id pada elemen tujuan, lalu link ke #id tersebut -->
+    <!-- Target yang ingin tuju -->
+    <h2 id="tentang-kami">Tentang Kami</h2>
+    <h2 id="layanan">Layanan</h2>
+    <h2 id="kontak">Kontak</h2>
+
+    <!-- Link yang menuju ke masing-masing bagian -->
+    <nav>
+      <a href="#tentang-kami">Tentang kami</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- Link ke email dan telepon -->
+    <a href="mailto:halo:buildwithangga.com">Kirim email</a>
+    <a href="tel:+628748484940">Hubungi kami</a>
+
+    <!-- target="_blank" - buka di tab baru   -->
+    <a
+      href="https://buildwithangga.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      >BuildwithAngga</a
+    >
+    <!-- Download Link - membuat browser mengunduh file html alih-alih membukannya -->
+    <a href="pandian-html.pdf" download>Unduh panduan html</a>
+    <!-- Dengan nama file customn -->
+    <a href="pandian-html.pdf" download="Panduan-HTML-BWA.pdf"
+      >Unduh panduan html</a
+    >
   </body>
 </html>
